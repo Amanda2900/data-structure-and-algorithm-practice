@@ -1,3 +1,8 @@
+// You are reorganizing your schedule and a way to simplify it is by reorganizing it so that your meetings with a single person throught the day are combined into one meeting. You have separated your day into several equal sized chunks.
+// Your coworkers have provided their availability and you notice that some were not available at the original meeting time.
+// To prevent confusion, you would also like to preserve the order that you see people for the first time throughout the day, if possible. 
+// Your function will be given an array of names representing your current schedule broken up into equal chunks of time. You will also be provided an array of arrays, each subarray containing a name in the original calendar, that person's starting availability(inclusive), and their ending availability(exclusive). Availabilities are meant to be human readable and start at 1.
+
 function optimizeSchedule(originalSchedule, availabilities) {
   const orderHash = new Map();
   const personHash = {};
