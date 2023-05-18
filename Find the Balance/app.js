@@ -1,3 +1,6 @@
+// Create a function to find the index of an array of positive integers (index start at 0) where the difference of the sum of elements on either side of the index are as close to zero as possible. If there are multiple indexes that tie return the smallest index.
+
+
 function findBalance(intArray) {
 
   const findTotal = array => array.reduce((accumulator, i) => accumulator + i, 0);
